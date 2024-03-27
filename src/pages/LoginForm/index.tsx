@@ -53,7 +53,9 @@ export function LoginForm() {
                 labelPlacement="stacked"
                 type="email"
                 placeholder="example@example.com"
-                onIonInput={(ev) => setValue("email", ev.detail.value!)}
+                onIonInput={(ev) => setValue("email", ev.detail.value!, {
+                  shouldValidate: true
+                })}
               ></IonInput>
             </IonItem>
             <IonItem lines="none">
