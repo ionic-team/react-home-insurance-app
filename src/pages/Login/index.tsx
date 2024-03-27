@@ -37,6 +37,7 @@ export function Login() {
             expand="block"
             size="large"
             color="primary-light"
+            routerLink="/sign-up"
           >
             Sign up
           </IonButton>
@@ -68,7 +69,9 @@ export function Login() {
             Continue with Facebook
           </IonButton>
           <div className="flex flex-row justify-center mt-5">
-            <IonButton fill="clear">Log in as Sample User</IonButton>
+            <IonButton fill="clear" routerLink="/">
+              Log in as Sample User
+            </IonButton>
           </div>
         </div>
       </IonContent>
