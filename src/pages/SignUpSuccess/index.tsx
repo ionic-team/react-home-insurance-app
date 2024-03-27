@@ -6,7 +6,7 @@ import {
   IonToolbar,
 } from "@ionic/react";
 
-export function SignUpSuccess() {
+export default function SignUpSuccess() {
   return (
     <IonPage>
       <IonContent className="text-center">

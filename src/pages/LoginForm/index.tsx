@@ -19,7 +19,7 @@ interface ILoginForm {
   keepLoggedIn: boolean;
 }
 
-export function LoginForm() {
+export default function LoginForm() {
   const { register, handleSubmit, formState, setValue } = useForm<ILoginForm>();
   const [busy, setBusy] = useState(false);
   const { push } = useIonRouter();
@@ -53,9 +53,11 @@ export function LoginForm() {
                 labelPlacement="stacked"
                 type="email"
                 placeholder="example@example.com"
-                onIonInput={(ev) => setValue("email", ev.detail.value!, {
-                  shouldValidate: true
-                })}
+                onIonInput={(ev) =>
+                  setValue("email", ev.detail.value!, {
+                    shouldValidate: true,
+                  })
+                }
               ></IonInput>
             </IonItem>
             <IonItem lines="none">

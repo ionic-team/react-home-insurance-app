@@ -1,8 +1,12 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab3.css';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
 
-const Tab3: React.FC = () => {
+export default function Policies() {
   return (
     <IonPage>
       <IonHeader>
@@ -16,10 +20,7 @@ const Tab3: React.FC = () => {
             <IonTitle size="large">Tab 3</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
       </IonContent>
     </IonPage>
   );
-};
-
-export default Tab3;
+}

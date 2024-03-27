@@ -27,7 +27,7 @@ interface ISignUpForm {
   keepLoggedIn: boolean;
 }
 
-export function SignUpForm() {
+export default function SignUpForm() {
   const { register, handleSubmit, formState, setValue } =
     useForm<ISignUpForm>();
   const [busy, setBusy] = useState(false);

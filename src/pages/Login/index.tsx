@@ -2,7 +2,7 @@ import { IonButton, IonContent, IonPage, IonText } from "@ionic/react";
 
 import "./style.css";
 
-export function Login() {
+export default function Login() {
   return (
     <IonPage>
       <IonContent>
