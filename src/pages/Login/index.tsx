@@ -7,7 +7,7 @@ export function Login() {
     <IonPage>
       <IonContent>
         <div className="hero">
-          <img className="hero-logo" src="/logo.svg" alt="Logo" />
+          <img className="hero-logo" src="/logo.svg" height="36" alt="Logo" />
           <IonText color="light">
             <h1 className="ion-heading-1 text-center">
               Keep everything
@@ -26,6 +26,7 @@ export function Login() {
             expand="block"
             size="large"
             color="primary"
+            routerLink="/login-form"
           >
             Log in
           </IonButton>

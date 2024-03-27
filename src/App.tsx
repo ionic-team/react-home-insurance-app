@@ -36,6 +36,7 @@ import "./theme/variables.css";
 
 import "./App.css";
 import { Login } from "./pages/Login";
+import { LoginForm } from "./pages/LoginForm";
 
 setupIonicReact({
   theme: "ionic",
@@ -47,6 +48,9 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         <Route exact path="/login">
           <Login />
+        </Route>
+        <Route exact path="/login-form">
+          <LoginForm />
         </Route>
         <Route exact path="/">
           <IonTabs>

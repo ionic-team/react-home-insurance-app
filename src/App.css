@@ -30,3 +30,7 @@
   font-weight: 400;
   line-height: 36px;
 }
+
+.ion-text-color {
+  color: var(--ion-color-base);
+}
